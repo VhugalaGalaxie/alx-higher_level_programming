@@ -1,4 +1,7 @@
 #!/usr/bin/node
-exports.addMeMaybe = function addMeMaybe (number, theFunction) {
-  return theFunction(++number);
+// executes x times a function.
+
+exports.addMeMaybe = function (number, theFunction) {
+  number++;
+  theFunction(number);
 };
