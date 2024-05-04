@@ -1,6 +1,8 @@
 #!/usr/bin/node
-const { argv } = require('process');
-const a = Number(argv[2]);
-const b = Number(argv[3]);
-const add = (a, b) => a + b;
-console.log(add(a, b));
+// prints the addition of 2 integers
+
+function add (a, b) {
+  return parseInt(a) + parseInt(b);
+}
+
+console.log(add(process.argv[2], process.argv[3]));
