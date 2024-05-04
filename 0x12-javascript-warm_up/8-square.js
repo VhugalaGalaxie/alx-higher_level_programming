@@ -1,11 +1,10 @@
 #!/usr/bin/node
-const { argv } = require('process');
-const size = Number(argv[2]);
-const repeat = 'X'.repeat(size);
-if (isNaN(size)) {
+// prints a square
+
+if (isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
-  for (let i = 0; i < size; i++) {
-    console.log(repeat);
+  for (let i = 0; i < parseInt(process.argv[2]); i++) {
+    console.log('X'.repeat(parseInt(process.argv[2])));
   }
 }
